@@ -5,9 +5,12 @@
                 placeholder="Pick one"
                 aria-label="Number"
                 matInput
-                [formControl]="myControl">
+                [formControl]="myControl"
+                [matAutocomplete]="auto">
     </mat-form-field>
-    <mat-option *ngFor="let pokemon of pokemonesFiltered | async" [value]="pokemon">
-    {{pokemon.name}}
-    </mat-option>
+    <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete" panelClass="autocomplete-panel">
+        <mat-option *ngFor="let pokemon of pokemonesFiltered | async" [value]="pokemon">
+        {{pokemon.name}}
+        </mat-option>
+    </mat-autocomplete>
 </form>
