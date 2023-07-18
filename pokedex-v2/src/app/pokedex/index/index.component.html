@@ -1,0 +1,23 @@
+<div class="main-wrapper">
+    <div class="search-bar-wrapper">
+        <app-search-bar [pokemonesList]="pokemonesList"></app-search-bar>
+    </div>
+    <div class="poke-list pt-2 pb-5" [style.grid-template-columns]="'repeat('+limitador+', 1fr)'">
+        <!-- intentar arreglar lo de las clases -->
+        <div class="pokemon" *ngFor="let pokemon of pokemones">
+            <div class="card ">
+                <img class="card-img" 
+                    [style]="{'background': pokemon | backgroundColorType}" 
+                    src="{{pokemon.sprites.front_default}}"  
+                    alt="{{pokemon.name}}">
+                <div class="card-body" >
+                    <h5 class="card-title">{{pokemon.name | titlecase }}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{pokemon.id | number:'3.0-0'}}</h6>
+                    <a *ngFor="let value of pokemon.types" href="#" class="type-btn {{value.type.name}}">
+                        {{value.type.name | titlecase}}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

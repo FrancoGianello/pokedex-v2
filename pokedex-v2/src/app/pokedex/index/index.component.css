@@ -1,0 +1,73 @@
+.main-wrapper{
+    height: 100%;
+    width: 80vw;
+    margin: 0 auto;
+}
+.poke-list{
+    display: grid;
+    gap: 1rem;
+}
+.search-bar-wrapper{
+    padding: 1% 0;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.fire{background-color: var(--fire-type);}
+.water{background-color: var(--water-type);}
+.dark{background-color: var(--dark-type);}
+.fairy{background-color: var(--fairy-type);}
+.dragon{background-color: var(--dragon-type);}
+.flying{background-color: var(--flying-type);}
+.ice{background-color: var(--ice-type);}
+.grass{background-color: var(--grass-type);}
+.poison{background-color: var(--poison-type);}
+.steel{background-color: var(--steel-type);}
+.ground{background-color: var(--ground-type);}
+.rock{background-color: var(--rock-type);}
+.ghost{background-color: var(--ghost-type);}
+.psychic{background-color: var(--psychic-type);}
+.bug{background-color: var(--bug-type);}
+.normal{background-color: var(--normal-type);}
+.fighting{background-color: var(--fighting-type);}
+.electric{background-color: var(--electric-type);}
+
+.type-btn:hover{
+    opacity: 0.75;
+}
+.type-btn:active{
+    opacity: 1;
+}
+.type-btn{
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    margin-right: 5px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+/* .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.example-full-width {
+    width: 100%;
+} */
